@@ -32,7 +32,6 @@ Dengan hadirnya aplikasi ini, layanan bengkel menjadi lebih terorganisir, modern
 1. Halaman Utama (index.html)
 Berfungsi sebagai halaman informasi awal bengkel.
 Contoh potongan kode:
-```
 <nav>
   <a href="index.html">Home</a>
   <a href="shop.html">Shop</a>
