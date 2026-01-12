@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>AVracing | Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <div class="logo">AVracing</div>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="chat.html">Chat</a>
+    <a href="shop.html" class="active">Shop</a>
+  </nav>
+</header>
+
+<main class="container">
+
+<h1 class="page-title">Shop Sparepart AVracing</h1>
+
+<section class="shop-grid">
+  <!-- 20 ITEM CONTOH -->
+  <div class="product"><h3>Oli Racing</h3><p>Rp 75.000</p><button onclick="addCart('Oli Racing',75000)">Tambah</button></div>
+  <div class="product"><h3>Busi Iridium</h3><p>Rp 45.000</p><button onclick="addCart('Busi Iridium',45000)">Tambah</button></div>
+  <div class="product"><h3>Filter Udara</h3><p>Rp 60.000</p><button onclick="addCart('Filter Udara',60000)">Tambah</button></div>
+  <div class="product"><h3>Kampas Rem</h3><p>Rp 85.000</p><button onclick="addCart('Kampas Rem',85000)">Tambah</button></div>
+  <div class="product"><h3>Rantai Motor</h3><p>Rp 150.000</p><button onclick="addCart('Rantai Motor',150000)">Tambah</button></div>
+
+  <div class="product"><h3>Gear Set</h3><p>Rp 220.000</p><button onclick="addCart('Gear Set',220000)">Tambah</button></div>
+  <div class="product"><h3>Ban Depan</h3><p>Rp 320.000</p><button onclick="addCart('Ban Depan',320000)">Tambah</button></div>
+  <div class="product"><h3>Ban Belakang</h3><p>Rp 380.000</p><button onclick="addCart('Ban Belakang',380000)">Tambah</button></div>
+  <div class="product"><h3>Aki Motor</h3><p>Rp 190.000</p><button onclick="addCart('Aki Motor',190000)">Tambah</button></div>
+  <div class="product"><h3>Shockbreaker</h3><p>Rp 450.000</p><button onclick="addCart('Shockbreaker',450000)">Tambah</button></div>
+
+  <div class="product"><h3>Knalpot Racing</h3><p>Rp 650.000</p><button onclick="addCart('Knalpot Racing',650000)">Tambah</button></div>
+  <div class="product"><h3>Spion CNC</h3><p>Rp 120.000</p><button onclick="addCart('Spion CNC',120000)">Tambah</button></div>
+  <div class="product"><h3>Handle Rem</h3><p>Rp 95.000</p><button onclick="addCart('Handle Rem',95000)">Tambah</button></div>
+  <div class="product"><h3>Master Rem</h3><p>Rp 280.000</p><button onclick="addCart('Master Rem',280000)">Tambah</button></div>
+  <div class="product"><h3>Selang Rem</h3><p>Rp 90.000</p><button onclick="addCart('Selang Rem',90000)">Tambah</button></div>
+
+  <div class="product"><h3>CVT Kit</h3><p>Rp 310.000</p><button onclick="addCart('CVT Kit',310000)">Tambah</button></div>
+  <div class="product"><h3>Kampas Kopling</h3><p>Rp 140.000</p><button onclick="addCart('Kampas Kopling',140000)">Tambah</button></div>
+  <div class="product"><h3>Velg Racing</h3><p>Rp 1.200.000</p><button onclick="addCart('Velg Racing',1200000)">Tambah</button></div>
+  <div class="product"><h3>Lampu LED</h3><p>Rp 70.000</p><button onclick="addCart('Lampu LED',70000)">Tambah</button></div>
+  <div class="product"><h3>Cover Body</h3><p>Rp 180.000</p><button onclick="addCart('Cover Body',180000)">Tambah</button></div>
+</section>
+
+<!-- KERANJANG -->
+<section class="cart-box">
+  <h2>🛒 Keranjang</h2>
+  <ul id="cart"></ul>
+  <p id="total">Total: Rp 0</p>
+
+  <h3>Catatan / Barang yang Dicari</h3>
+  <textarea id="note" placeholder="Contoh: Cari kampas rem Beat / Vario" rows="3"></textarea>
+
+  <h3>Metode Pembayaran</h3>
+  <select id="payment">
+    <option>Transfer Bank</option>
+    <option>QRIS</option>
+    <option>COD</option>
+  </select>
+
+  <button class="checkout-btn" onclick="checkout()">Checkout</button>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

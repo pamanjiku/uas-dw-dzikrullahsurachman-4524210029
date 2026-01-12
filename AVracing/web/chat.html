@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>AVracing | Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR UTAMA -->
+<header class="top-nav">
+  <div class="logo">AVracing</div>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="chat.html" class="active">Chat</a>
+    <a href="shop.html">Shop</a>
+  </nav>
+</header>
+
+<!-- CHAT CONTAINER -->
+<main class="chat-container">
+
+  <!-- HEADER CHAT -->
+  <div class="chat-header">
+    <div class="avatar">🤖</div>
+    <div>
+      <div class="chat-title">Bot AVracing</div>
+      <div class="chat-sub">
+        Online • Jam sibuk 07.00 – 19.00<br>
+        <small>Balasan ini dari sistem bot otomatis</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAT AREA -->
+  <div id="chatBox" class="chat-area">
+    <div class="bubble bot">
+      <b>🤖 Bot AVracing</b><br>
+      Halo 👋<br>
+      Saya bot otomatis AVracing.<br><br>
+      Kamu bisa tanya:
+      <ul>
+        <li>Status servis motor</li>
+        <li>Booking servis</li>
+        <li>Estimasi pengerjaan</li>
+        <li>Sparepart & layanan</li>
+      </ul>
+      ⏰ Jika jam sibuk, admin akan membalas setelah jam operasional.
+    </div>
+  </div>
+
+  <!-- INPUT BAR -->
+  <div class="chat-input-bar">
+
+    <!-- PLUS BUTTON -->
+    <div class="plus-wrapper">
+      <button class="plus-btn" onclick="togglePlusMenu()">+</button>
+
+      <div id="plusMenu" class="plus-menu">
+        <label>
+          📷 Kamera
+          <input type="file" accept="image/*" capture hidden>
+        </label>
+        <label>
+          🖼️ Galeri
+          <input type="file" accept="image/*" hidden>
+        </label>
+      </div>
+    </div>
+
+    <!-- TEXT INPUT -->
+    <input
+      type="text"
+      id="msg"
+      placeholder="Ketik pesan..."
+      onkeydown="if(event.key==='Enter') sendChat()"
+    >
+
+    <!-- SEND -->
+    <button class="send-btn" onclick="sendChat()">➤</button>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
