@@ -1,7 +1,7 @@
 ### **LAYANAN SERVIS/BOOKING BENGKEL AVracing**
 ** Anggota Kelompok **
-** - Dzikrullah Surachman**
-** - 4524210029 **
+- **Nama**: Dzikrullah Surachman
+- **NPM**: 4524210029
 ### **Latar Belakang Pengembangan Aplikasi** 
 AVRacing adalah sebuah situs yang dibuat untuk memfasilitasi booking layanan bengkel secara online, bertujuan untuk memberikan kemudahan bagi pelanggan mendapatkan servis kendaraan tanpa perlu datang ke lokasi bengkel. Teknologi yang digunakan dalam pengembangan sistem ini adalah HTML, CSS, dan JavaScript, dengan desain antarmuka yang sederhana dan user-friendly. 
 Dari struktur aplikasi, website ini memiliki: 
