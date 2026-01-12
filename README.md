@@ -29,32 +29,43 @@ Dengan hadirnya aplikasi ini, layanan bengkel menjadi lebih terorganisir, modern
 - Informasi status admin (online / sibuk)
 
 ### **Penjelasan Fitur Aplikasi**
-1. Halaman Utama (index.html)
+### **1. Halaman Utama (index.html)**
 Berfungsi sebagai halaman informasi awal bengkel.
 Contoh potongan kode:
-<nav>
+```javascript
+{ <nav>
   <a href="index.html">Home</a>
   <a href="shop.html">Shop</a>
   <a href="chat.html">Chat</a>
 </nav>
+}
+```
 Fungsi:
 - Navigasi antar halaman
 - Menampilkan identitas bengkel
 - Menjadi landing page pengguna
-2. Halaman Shop / Layanan (shop.html)
+### **2. Halaman Shop / Layanan (shop.html)**
 Menampilkan layanan dan informasi bengkel.
+```javascript
+{
 <div class="service">
   <h3>Servis Mesin</h3>
   <p>Pengecekan dan perbaikan mesin kendaraan</p>
 </div>
+}
+```
 Fungsi:
 - Memberi informasi layanan bengkel
 - Mengarahkan pelanggan ke komunikasi lebih lanjut
-3. Fitur Chat Pelanggan (chat.html)
+### **3. Fitur Chat Pelanggan (chat.html)**
 Digunakan untuk komunikasi antara pelanggan dan admin bengkel.
+```javascript
+{
 <div id="chatBox"></div>
 <input type="text" id="msg" placeholder="Ketik pesan...">
 <button onclick="sendChat()">Kirim</button>
+}
+```
 Fungsi:
 - Menampilkan pesan
 - Mengirim pesan ke admin
