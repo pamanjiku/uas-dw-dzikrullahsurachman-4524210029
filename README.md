@@ -72,6 +72,8 @@ Fungsi:
 - Menampilkan balasan otomatis
 4. Logika Chat & Status Admin (script.js)
 Mengatur alur chat dan status admin.
+```javascript
+{
 let adminOnline = false; // false = sibuk, true = online
 function sendChat() {
   const input = document.getElementById("msg");
@@ -86,12 +88,16 @@ function sendChat() {
   }
   input.value = "";
 }
+}
+```
 Fungsi:
 - Menangani input chat
 - Memberi respon berdasarkan status admin
 - Menambah elemen chat secara dinamis
 5. Tampilan Website (style.css)
 Mengatur tampilan antarmuka website.
+```javascript
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -102,6 +108,8 @@ body {
   overflow-y: auto;
   border: 1px solid #ccc;
 }
+}
+```
 Fungsi:
 - Membuat tampilan rapi dan konsisten
 - Mengatur layout chat dan halaman
